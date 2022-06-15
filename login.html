@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="login">
+        <p>Login</p>
+        <form>
+            <input class="input" type="email" name="email" placeholder="E-mail">
+            <input class="input" type="password" name="senha" placeholder="Senha">
+            <a id="button" onclick="carregar()" href="index.html">Entrar</a>
+        </form>
+    </section>
+    <section id="autenticacao">
+        <p>Autenticando...</p>
+    </section>
+    <script>
+        function carregar() {
+            document.querySelector("#login").classList.add("desaparecer");
+            document.querySelector("#autenticacao").classList.add("aparecer");
+        }
+
+    </script>
+</body>
+</html>
